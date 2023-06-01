@@ -1,7 +1,7 @@
 /* desafio:Escreva uma função que recebe um número qualquer de números inteiros como argumento e retorne a média aritimetica entre eles.
-*/
+O ponto chave nesse desafio é trabalhar com uma quantidade qualquer de números, sejam 3 ou 3000. Para isso podemos usar arrays, assim ao chamar a função temos a liberdade de passar quantos números quisermos e isso será tratado corretamente dentro dela.
 
-/*Primeira versão
+Primeira versão
 
 function average(numbers) {
     let sum = 0
@@ -16,7 +16,7 @@ function average(numbers) {
 }
 */
 
-//segunda versão - usando o metodo reduce()
+//Refatorando - usando o metodo reduce()
 
 function average(...numbers) {
     const sum = numbers.reduce((accum, num) => accum + num, 0)
